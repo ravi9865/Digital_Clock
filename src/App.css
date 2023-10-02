@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  width: 100vw;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  margin-top: 10%;
+  background: url(./Assests/071.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem;
+  position: relative;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.boot{
+  position: relative;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.timer-div {
+  color: whitesmoke;
+  border: 5px solid black;
+  background-image: url(./Assests/225.jpg);
+  /* background-image: conic-gradient(at 0% 30%, rgb(236, 18, 18) 15%, rgb(1, 1, 1) 40%, #74ff1e 50%); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 5rem;
+  
+}
+.digital-clock{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 1rem;
+}
+p{
+  font-size: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Orbitron', sans-serif;
+  color: lime;
+  word-spacing: 0.3rem;  
+
+}
+.timer-div h2{
+  position: fixed;
+  top: 20px;
+  right: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.btn {
+  border: 1px solid #1667C2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.timer-div h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.timer-div h3 {
+  background-color: rgb(82, 5, 5);
+  color: whitesmoke;
+  border-radius: 15px;
+  width: 5rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+@media screen and (min-width:300px) and (max-width:468px) {
+  body {
+    height: 100vh;
+    padding: 1rem;
   }
-  to {
-    transform: rotate(360deg);
+  .timer-div {
+    /* margin: 3rem; */
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 2rem;
+  }
+  .timer-div h1 {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+}
+@media screen and (min-width:469px) and (max-width:1200px) {
+  body {
+    margin-top: 30%;
+    height: 100vh;
+    padding: 1rem;
   }
 }
